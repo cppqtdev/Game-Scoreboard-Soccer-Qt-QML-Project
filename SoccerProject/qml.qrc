@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Components/CButton.qml</file>
+        <file>Components/IconButton.qml</file>
+        <file>Components/IconWithTitle.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Screens/Home.qml</file>
+        <file>Screens/Settings.qml</file>
+        <file>Screens/Update.qml</file>
+        <file>Components/ResponsiveLayout.qml</file>
+        <file>Components/CStackView.qml</file>
+        <file>Assets/Icons/sett.png</file>
+        <file>Assets/Images/undraw_goal_0v5v.png</file>
+        <file>Assets/Images/undraw_junior_soccer_6sop.png</file>
+        <file>Assets/Images/undraw_goal_0v5v-transformed.png</file>
+        <file>Assets/Icons/backhome.png</file>
+        <file>Assets/Icons/update.png</file>
+        <file>Assets/Icons/home.png</file>
+        <file>Assets/Images/logo.png</file>
+        <file>Assets/Icons/icons8-info-50.png</file>
+        <file>Assets/Icons/icons8-ok-30.png</file>
+    </qresource>
+</RCC>
