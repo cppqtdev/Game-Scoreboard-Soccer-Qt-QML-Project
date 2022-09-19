@@ -20,5 +20,14 @@
         <file>Assets/Images/logo.png</file>
         <file>Assets/Icons/icons8-info-50.png</file>
         <file>Assets/Icons/icons8-ok-30.png</file>
+        <file>Screens/HomeTeamConfiguration.qml</file>
+        <file>Screens/GuestTeamConfiguration.qml</file>
+        <file>Assets/Icons/icons8-back-64.png</file>
+        <file>Screens/GamePlayScreen.qml</file>
+        <file>Components/CTextField.qml</file>
+        <file>Assets/Images/football.jpg</file>
+        <file>Assets/Images/pngegg(1).png</file>
+        <file>Assets/Images/pngegg(2).png</file>
+        <file>Assets/Images/pngegg(3).png</file>
     </qresource>
 </RCC>

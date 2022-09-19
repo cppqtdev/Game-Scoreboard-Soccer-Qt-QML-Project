@@ -53,7 +53,7 @@ Item {
                     rightMargin: 10
                 }
                 onClicked: {
-                    console.log("Home Clicked")
+                   mainStackView.pop()
                 }
             }
             CButton{
@@ -73,13 +73,33 @@ Item {
                     rightMargin: 10
                 }
                 onClicked: {
-                    console.log("Update Button Clicked")
+                    mainStackView.push("qrc:/Screens/Update.qml")
+                }
+            }
+            CButton{
+                id:back
+                color: "transparent"
+                borderColor:"transparent"
+                hoverColor: "transparent"
+                pressColor: "transparent"
+                width: 40
+                height: 40
+                sourceIcon: "qrc:/Assets/Icons/icons8-back-64.png"
+                iconWidth: 40
+                iconHeight: 40
+                visible: mainStackView.depth>1
+                anchors{
+                    right: updateButton.left
+                    verticalCenter: parent.verticalCenter
+                    rightMargin: 10
+                }
+                onClicked: {
+                       mainStackView.pop()
                 }
             }
 
             Label{
                 id:currentTime
-                text: qsTr("67:34 PM")
                 color:titleColor
                 font.pixelSize: 18
                 font.family: "Times New Roman"

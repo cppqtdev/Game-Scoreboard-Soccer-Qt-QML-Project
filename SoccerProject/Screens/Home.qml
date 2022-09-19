@@ -53,35 +53,37 @@ Rectangle{
                 anchors.centerIn: parent
                 sourceSize: Qt.size(speakerRec.width*0.9,speakerRec.height*0.9)
             }
-            Row{
-                spacing: 10
+            IconButton{
+                width: 100
+                height: 40
+                borderRadius: 18
+                color: homeColor
+                hoverColor: homeColor
+                pressColor: homeColor
+                borderColor: titleColor
+                buttonText: "Settings"
+                innerText.color:titleColor
+                fontSize: 10
+                sourceIcon: "qrc:/Assets/Icons/sett.png"
+                iconWidth: 20
+                iconHeight: 20
                 anchors{
                     right: parent.right
                     bottom: parent.bottom
                     bottomMargin: 15
                     rightMargin: 20
                 }
-
-                RowLayout{
-                    spacing: 5
-                    Image{
-                        source: "qrc:/Assets/Icons/sett.png"
-                        sourceSize: Qt.size(20,20)
-                    }
-                    Label{
-                        text: qsTr("Settings")
-                        color:titleColor
-                        font.pixelSize: 12
-                        font.bold: true
-                        Layout.alignment: Qt.AlignVCenter
-                    }
-                }
+                onClicked:  mainStackView.push("qrc:/Screens/HomeTeamConfiguration.qml")
             }
+
             CButton{
                 width: 100
                 height: 40
                 borderRadius: 18
                 color: homeColor
+                hoverColor: homeColor
+                pressColor: homeColor
+                borderColor: titleColor
                 buttonText: "Start Game"
                 innerText.color:titleColor
                 anchors{
@@ -90,6 +92,7 @@ Rectangle{
                     bottomMargin: 15
                     leftMargin: 20
                 }
+                 onClicked:  mainStackView.push("qrc:/Screens/GamePlayScreen.qml")
 
             }
 
@@ -121,35 +124,37 @@ Rectangle{
                 anchors.centerIn: parent
                 sourceSize: Qt.size(speakerRec.width*0.9,speakerRec.height*0.9)
             }
-            RowLayout{
-                spacing: 10
-                anchors{
-                    right: parent.right
-                    bottom: parent.bottom
-                    bottomMargin: 15
-                    rightMargin: 20
-                }
-                RowLayout{
-                    spacing: 5
-                    Image{
-                        source: "qrc:/Assets/Icons/sett.png"
-                        sourceSize: Qt.size(20,20)
+                IconButton{
+                    width: 100
+                    height: 40
+                    borderRadius: 18
+                    color: homeColor
+                    hoverColor: homeColor
+                    pressColor: homeColor
+                    borderColor: titleColor
+                    buttonText: "Settings"
+                    innerText.color:titleColor
+                    fontSize: 10
+                    sourceIcon: "qrc:/Assets/Icons/sett.png"
+                    iconWidth: 20
+                    iconHeight: 20
+                    anchors{
+                        right: parent.right
+                        bottom: parent.bottom
+                        bottomMargin: 15
+                        rightMargin: 20
                     }
-                    Label{
-                        text: qsTr("Settings")
-                        color:titleColor
-                        font.pixelSize: 12
-                        font.bold: true
-                        Layout.alignment: Qt.AlignVCenter
-                    }
+                    onClicked:  mainStackView.push("qrc:/Screens/GuestTeamConfiguration.qml")
                 }
-            }
 
              CButton{
                  width: 100
                  height: 40
                  borderRadius: 18
                  color: homeColor
+                 hoverColor: homeColor
+                 pressColor: homeColor
+                 borderColor: titleColor
                  buttonText: "Start Game"
                  innerText.color:titleColor
                  anchors{
@@ -158,6 +163,7 @@ Rectangle{
                      bottomMargin: 15
                      leftMargin: 20
                  }
+                  onClicked:  mainStackView.push("qrc:/Screens/GamePlayScreen.qml")
 
              }
         }
