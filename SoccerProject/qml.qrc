@@ -29,5 +29,6 @@
         <file>Assets/Images/pngegg(1).png</file>
         <file>Assets/Images/pngegg(2).png</file>
         <file>Assets/Images/pngegg(3).png</file>
+        <file>Screens/ColorSettings.qml</file>
     </qresource>
 </RCC>

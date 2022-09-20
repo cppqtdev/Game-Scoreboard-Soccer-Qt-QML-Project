@@ -144,7 +144,7 @@ Rectangle{
                         bottomMargin: 15
                         rightMargin: 20
                     }
-                    onClicked:  mainStackView.push("qrc:/Screens/GuestTeamConfiguration.qml")
+                    onClicked:  mainStackView.push("qrc:/Screens/ColorSettings.qml")
                 }
 
              CButton{
